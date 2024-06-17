@@ -1,9 +1,9 @@
 {
-    "name": "pdeio/redis-driver-fallback",
+    "name": "redshoes/redis-driver-fallback",
     "description": "When the redis server stops, a second cache driver starts working. Laravel's cache can be cleared whenever the redis server is returned or the second cache driver is started. In this way, the cache system remains synchronized without the problem of loading the old cache registers.",
-    "type": "Laravel",
+    "type": "laravel",
     "require": {
-        "guzzlehttp/guzzle": "6.*"
+        "guzzlehttp/guzzle": "7.*"
     },
     "autoload": {
         "psr-4": {
@@ -17,7 +17,7 @@
             ]
         }
     },
-    "keywords": ["laravel5.8", "laravel5", "cache", "redis", "file", "pdeio"],
+    "keywords": ["laravel10", "cache", "redis", "file" ],
     "license": "MIT",
     "authors": [{
         "name": "Paulo De Iovanna",
