@@ -21,7 +21,7 @@ class RedisDriverFallback extends CacheManager
      * @return \Illuminate\Contracts\Cache\Repository
      * @throws Exception
      */
-    protected function resolve($currentDriver)
+    public function resolve($currentDriver)
     {
         // check if the cache driver is redis
         if (config('redis-driver-fallback.fallback_turn_on', true) && $currentDriver === 'redis') {
