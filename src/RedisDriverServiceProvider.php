@@ -1,14 +1,14 @@
 <?php
 
-namespace Pdeio\RedisDriverFallback;
+namespace Redshoes\RedisDriverFallback;
 use Illuminate\Cache\CacheServiceProvider;
 
 class RedisDriverServiceProvider extends CacheServiceProvider
 {
     /**
-     * @package pdeio/redis-driver-fallback
+     * @package redshoes/redis-driver-fallback
      *
-     * @author Paulo De Iovanna <paulodeiovanna@gmail.com>
+     * @author Eri Meilis <eri@redshoes.pro> fork from Paulo De Iovanna <paulodeiovanna@gmail.com>
      */
     protected $defer = false;
     /**
@@ -44,7 +44,7 @@ class RedisDriverServiceProvider extends CacheServiceProvider
     {
         $this->publishes([
             __DIR__.'/config/config.php' => config_path('redis-driver-fallback.php'),
-            __DIR__.'/mail' => resource_path('views/pdeio/redis-driver-fallback-email-template'),
+            __DIR__.'/mail' => resource_path('views/redshoes/redis-driver-fallback-email-template'),
         ]);
         $this->loadViewsFrom(__DIR__.'/mail', 'RedisDriverFallback');
     }

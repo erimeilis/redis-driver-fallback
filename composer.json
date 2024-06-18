@@ -7,13 +7,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Pdeio\\RedisDriverFallback\\": "src/"
+            "Redshoes\\RedisDriverFallback\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Pdeio\\RedisDriverFallback\\RedisDriverServiceProvider"
+                "Redshoes\\RedisDriverFallback\\RedisDriverServiceProvider"
             ]
         }
     },

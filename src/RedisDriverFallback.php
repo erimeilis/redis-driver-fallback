@@ -1,5 +1,5 @@
 <?php
-namespace Pdeio\RedisDriverFallback;
+namespace Redshoes\RedisDriverFallback;
 
 use Illuminate\Cache\CacheManager;
 use Illuminate\Cache\RedisStore;
@@ -7,9 +7,9 @@ use Illuminate\Cache\RedisStore;
 
 /**
  * Class RedisDriverFallback
- * @package pdeio\redis-driver-fallback
+ * @package redshoes\redis-driver-fallback
  *
- * @author Paulo De Iovanna
+ * @author Eri Meilis fork from Paulo De Iovanna
  */
 class RedisDriverFallback extends CacheManager
 {

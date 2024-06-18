@@ -1,4 +1,4 @@
-# REDIS CACHE DRIVER FALLBACK (Laravel 5.8.* Package)
+# REDIS CACHE DRIVER FALLBACK (Laravel 10.* Package)
 
 [![Version](https://img.shields.io/static/v1.svg?label=packagist&message=v1.0.0&color=blue)](https://packagist.org/packages/pdeio/redis-driver-fallback)
 [![License](https://img.shields.io/static/v1.svg?label=license&message=MIT&color=blue)](https://packagist.org/packages/pdeio/redis-driver-fallback)
@@ -16,13 +16,13 @@ When the redis server stops, a second cache driver starts working. Laravel's cac
 1) In order to install Redis Drive Fallback, just run:
 
 ```
-composer require pdeio/redis-driver-fallback
+composer require redshoes/redis-driver-fallback
 ```
 
 2) [OPTIONAL] To create the configuration file (config/redis-driver-fallback.php) run:
 
 ```
-php artisan vendor:publish --provider="Pdeio\RedisDriverFallback\RedisDriverServiceProvider"
+php artisan vendor:publish --provider="Redshoes\RedisDriverFallback\RedisDriverServiceProvider"
 ```
 
 ## Configuration
@@ -91,12 +91,12 @@ Set the property values in the `config/redis-driver-fallback.php`.
     | It is recommended to leave this option on false, in development mode.
     |
     | You can edit the email template, if you want.
-    | In the folder "views/pdeio/redis-driver-fallback-email-template/alert.blade.php".
+    | In the folder "views/redshoes/redis-driver-fallback-email-template/alert.blade.php".
     | If you delete this folder, the application does not crash, but cannot be sent
     | any email from this package. You can use the redis event that is triggered when
     | the redis server stops.
     |
-    | It is recomended that you use the event ('redis.unvailable') which is fired
+    | It is recomended that you use the event ('redis.unavailable') which is fired
     | whenever the redis stops working, to send the email through your controller
     | and using your laravel queues.
     */
